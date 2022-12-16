@@ -1,0 +1,533 @@
+
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+/* Gloval Settings*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: white;
+}
+body , html {
+    overflow-x: hidden;
+}
+
+
+:root {
+    --grey: #1F2421;
+    --blueGreen: #216869;
+    --green:#49A078;
+    --lightGreen:#9CC5A1;
+    --white:#DCE1DE;
+    --brown:#ba6c25;
+  }
+
+
+/* Global Css Elments*/
+.under-line{
+    width: 150px;
+    height: 4px;
+    background-color:var(--green);
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+
+/* Header Box*/
+#headerText{
+    max-width: 255px;
+    margin-left: 320px;
+    
+
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url("./img/by-products/HEADER.jpg");
+    
+    background-position: bottom;
+    background-size: cover;
+    
+    display: flex;
+    align-items:center;
+    justify-content:flex-start;
+    padding-left: 10%;
+    color:var(--brown);
+    overflow-x: hidden;
+    
+}
+.header-content{
+    margin-bottom: 100px;
+}
+.header-content h1{
+    font-size: 8vmin;
+    font-family: 'Poppins', sans-serif;
+
+    font-weight: bold;
+
+}
+.shape-divder{
+    margin-bottom: 8px solid var(--white);
+    
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+   overflow: hidden;
+    line-height: 0;
+    transform: translate(0px) rotate(180deg);
+}
+
+
+
+
+/* Navigation Bar*/
+
+
+.navbar{
+    padding-left: 20%;
+    position: absolute;
+    top:0;
+    left: 0;
+    
+    display: flex;
+    width: 100%;
+    font-size: 1.5vmax;
+    justify-content: space-between;
+    padding: 5px;
+    text-align: center;
+    
+    
+    
+    
+}
+.navbar ul{
+    list-style: none;
+    color:var(--white);
+    padding-left: 10%;
+    padding-right: 10%;
+    
+    
+   
+}
+.navigation-links{
+   
+    display: flex;
+    align-items: center;
+    color:var(--white);
+  margin-left: 3%;
+  margin-right: 1%;
+  
+}
+.navigation-links li{
+    
+    margin: 0 10px 0 10px ;
+
+    
+}
+.navigation-links li a:hover{
+    color:var(--brown);
+    cursor: pointer;
+}
+.navigation-links li a{
+    color:var(--white);
+    text-align: center;
+    font-size: 16px;
+    
+}
+.Logo{
+   
+    position: relative;
+   
+    
+    width:100px;
+    height:100px;
+    max-width: 100px ; 
+    max-height: 100px;
+    
+  
+}
+.menu_btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width:40px;
+    cursor: pointer;
+    display: none;
+}
+
+/*Body Content*/
+section{
+    width: 80%;
+    margin: 80px auto;
+
+}
+.Introduction-para{
+    text-align: center;
+    font-size: 4vmin;
+    color: var(--blueGreen);
+}
+.Introduction-para p{
+    font-size: 3vmin;
+    color: var(--grey);
+}
+
+.Introduction-para span{
+    font-size: 2vmin;
+    color: var(--grey);
+    opacity: 70%;
+}
+
+/* First Paragraph*/
+
+.Topic2{
+    padding-top: 20px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 4vmin;
+    color: var(--blueGreen);
+
+}
+.tea-regions {
+    position: relative;
+    color: var(--blueGreen);
+    text-align: center;
+    font-size: 3vmin;
+    padding-left: 0;
+
+    
+}
+.tea-regions li {
+    align-items:center;
+    list-style:none; 
+    text-align: center;
+    list-style-image: url("./img/Tea-plantation/Icons/teaBullet.png");
+    list-style-position: inside;
+    
+   
+    
+}
+ 
+#tea-badges{
+   
+position: relative;
+align-items: center;
+    height: 170px;
+   
+}
+iframe{
+    
+    border-radius: 16px;
+
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    max-width: 500px;
+    width: 100%;
+}
+iframe:hover{
+    transform:scale(1)
+}
+
+
+/*Tea Process Diagram*/
+.sub-heading2{
+    text-align: left;
+
+}
+.TeaProcess{
+    position: relative;
+    color: var(--grey);
+    text-align: left;
+    font-size: 4vmin;
+    padding-left: 0;
+   
+}
+.TeaProcess ol{
+    font-size: 3.5vmin;
+    color: var(--brown);
+}
+.TeaProcess p{
+    font-size: 2.5vmin;
+    color: var(--grey);
+}
+
+
+
+.Topic1{
+    margin-top: 50px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 4vmin;
+    color: var(--blueGreen);
+    margin-bottom:40px ;
+
+}
+
+ .tea-diagram img{
+    
+    top: 0;
+    padding-right: 20%;
+    padding-left: 17%;    
+
+  
+   
+   
+    
+  
+   
+}
+
+
+/* Introduction Images*/
+.ParaHeader h3{
+    text-align: center;
+    font-size: 4vmin;
+    color: var(--blueGreen);
+}
+
+    .img-gal {
+       display:contents;
+       align-content: center;
+        padding: 20px 50px;
+        color: whitesmoke;
+        
+        border-radius: 20px;
+        margin: 25px 50px;
+        transition: 00.5s;
+    }
+    
+    .img-gal  img{
+        width: 300px;
+        height: auto;
+        
+    }
+    @media only screen and (max-width: 493px){
+        .img-gal img{
+            transform: translateX(-1%);
+        }
+        
+        .img-gal #wine{
+            
+            padding-right: 23%;
+        }
+        
+        
+    }
+
+
+
+.FirstRow .col1 img{
+    background-color: white ;
+    margin-bottom: 15px;
+    height: 170px;
+    background-size: cover;
+    border-radius: 50px 50px 0 0;
+}
+.FirstRow{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    text-align:center ;
+    margin-bottom: 10%;
+    
+}
+.FirstRow .col1{
+    transition: all 1s ease ;
+  
+ 
+    background-color: white;
+    width: 290px;
+    height: 500px;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 20px;
+    
+    text-align: center;
+    border-radius: 16px;
+
+box-shadow:  
+             42px 42px 84px #2c2c2c;
+}
+.FirstRow .col1 h3{
+    font-size: 3.5vmin;
+    color: var(--brown);
+}
+.FirstRow .col1 p{
+    font-size: 1vmax;
+    color: var(--grey);
+}
+/*Resonsive Intro Images*/
+@media only screen and (max-width: 850px){
+    .FirstRow{
+        flex-direction: column;
+    }
+    .FirstRow .col1 p{
+        font-size: 2vmax;
+    }
+
+}
+
+
+
+
+
+/*Reviews Section*/
+.Topic3{
+    margin-top: 40px;
+    padding-top: 10px;
+    text-align:center;
+    font-size: 4vmin;
+    color: var(--blueGreen);
+    
+    
+
+}
+.Row2 .col2 img{
+    background-color: white ;
+    margin-bottom: 15px;
+    height: 170px;
+   
+    background-size: cover;
+    border-radius: 50px 50px 0 0;
+}
+.Row2{
+    display:flex;
+    align-items:center;
+    width: auto;
+    justify-content: space-between;
+    text-align:center ;
+
+}
+.Row2 .col2{
+    transition: transform 1s ease;
+ 
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    
+    text-align: center;
+   
+
+
+}
+h3{
+    font-size: 4vmin;
+    color: var(--blueGreen);
+}
+.Row2.col2 p{
+    font-size: 2.5vmin;
+    text-align: justify;
+    color: var(--grey);
+}
+
+ /*Fotter area*/
+.footer{
+    
+    width:100%;
+    min-height:170px;
+    padding: 30px 0px;
+    
+    color: var(--white);
+    margin: 0;
+    background-image: url(./img/Footer-image.jpg.png);
+    background-position: bottom;
+   
+    background-size: cover;
+    
+    text-align: center;
+
+
+}
+.back-top-btn{
+  
+    position: absolute;
+    filter: brightness(10);
+    right: 0%;
+   
+    cursor: pointer;
+    
+}
+
+/*Animations Global*/
+img{
+    transition: transform 0.3s ease;
+
+}
+img:hover{
+    transform: scale(1.1);
+}
+
+
+/*Respnosive NavBar*/
+@media only screen and (max-width: 850px){
+    .menu_btn{
+        display: block;
+    }
+    .navbar{
+        padding: 0;
+        
+
+    }
+
+   
+    .navigation-links .Logo{
+        display: none;
+        padding-bottom: 0%;
+        padding-top: 0%;
+    }
+    .navigation-links{
+        
+        color: var(--green);
+        font-size: 3vmax;
+        padding: 0 1px;
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+        background: rgba(31, 36, 33, 0.61);
+
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        
+    }
+    .mobile-menu{
+        
+        margin-top: 0px;
+        margin-bottom: 10px;
+        border-bottom-right-radius: 30%;
+
+       
+
+    }
+    .navigation-links li{
+        margin:20px auto;
+        color: var(--green);
+        
+    }
+    .navigation-links li a{
+        margin:30px auto;
+        color: var(--green);
+        
+    }
+   
+    
+}
+    

@@ -1,0 +1,416 @@
+
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+/* Gloval Settings*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: white;
+}
+body , html {
+    overflow-x: hidden;
+}
+
+
+:root {
+    --grey: #1F2421;
+    --blueGreen: #216869;
+    --green:#49A078;
+    --lightGreen:#9CC5A1;
+    --white:#DCE1DE;
+    --brown:#ba6c25;
+  }
+
+
+/* Global Css Elments*/
+.under-line{
+    width: 150px;
+    height: 4px;
+    background-color:var(--green);
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.TeaProcess2{
+    display:flex;
+    position: relative;
+}
+.TeaProcess2 tea-diagram2 h3 {
+    text-align: center;
+    font-size: 2vmin;
+
+}
+#head1{
+    font-size: 4vmin;
+    color: var(--brown);
+
+
+}
+
+/* Header Box*/
+#headerText{
+    max-width: 255px;
+    margin-left: 320px;
+    
+
+}
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./img/Tea-Recipes/4603859.jpg");
+    
+    background-position: bottom;
+    background-size: cover;
+    
+    display: flex;
+    align-items:center;
+    justify-content:flex-start;
+    padding-left: 10%;
+    color:var(--brown);
+    overflow-x: hidden;
+    
+}
+.header-content{
+    margin-bottom: 100px;
+}
+.header-content h1{
+    font-size: 8vmin;
+    font-family: 'Poppins', sans-serif;
+
+    font-weight: bold;
+
+}
+.shape-divder{
+    margin-bottom: 8px solid var(--white);
+    
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+   overflow: hidden;
+    line-height: 0;
+    transform: translate(0px) rotate(180deg);
+}
+
+ 
+
+
+
+
+/* Navigation Bar*/
+
+
+.navbar{
+    padding-left: 20%;
+    position: absolute;
+    top:0;
+    left: 0;
+    
+    display: flex;
+    width: 100%;
+    font-size: 1.5vmax;
+    justify-content: space-between;
+    padding: 5px;
+    text-align: center;
+    
+    
+    
+    
+}
+.navbar ul{
+    list-style: none;
+    color:var(--white);
+    padding-left: 10%;
+    padding-right: 10%;
+    
+    
+   
+}
+.navigation-links{
+   
+    display: flex;
+    align-items: center;
+    color:var(--white);
+  margin-left: 3%;
+  margin-right: 1%;
+  
+}
+.navigation-links li{
+    
+    margin: 0 10px 0 10px ;
+
+    
+}
+.navigation-links li a:hover{
+    color:var(--brown);
+    cursor: pointer;
+}
+.navigation-links li a{
+    color:var(--white);
+    text-align: center;
+    font-size: 16px;
+    
+}
+.Logo{
+   
+    position: relative;
+   
+    
+    width:100px;
+    height:100px;
+    max-width: 100px ; 
+    max-height: 100px;
+    
+  
+}
+.menu_btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width:40px;
+    cursor: pointer;
+    display: none;
+}
+
+/*Body Content*/
+section{
+    width: 80%;
+    margin: 80px auto;
+
+}
+.Introduction-para{
+    text-align: center;
+    font-size: 4vmin;
+    color: var(--blueGreen);
+}
+.Introduction-para p{
+    font-size: 3vmin;
+    color: var(--grey);
+}
+
+.Introduction-para span{
+    font-size: 2vmin;
+    color: var(--grey);
+    opacity: 70%;
+}
+
+/* First Paragraph*/
+
+.Topic2{
+    padding-top: 20px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 4vmin;
+    color: var(--blueGreen);
+
+}
+.tea-regions {
+    position: relative;
+    color: var(--blueGreen);
+    text-align: center;
+    font-size: 3vmin;
+    padding-left: 0;
+
+    
+}
+.tea-regions li {
+    align-items:center;
+    list-style:none; 
+    text-align: center;
+    list-style-image: url("./img/Tea-plantation/Icons/teaBullet.png");
+    list-style-position: inside;
+    
+   
+    
+}
+ 
+#tea-badges{
+   
+position: relative;
+align-items: center;
+    height: 170px;
+   
+}
+iframe{
+    
+    border-radius: 16px;
+
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    max-width: 500px;
+    width: 100%;
+}
+iframe:hover{
+    transform:scale(1)
+}
+.content-table {
+   display: contents;
+   align-content: center;
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-size: 2em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px black;
+  }
+/* Tea Table*/
+  .content-table {
+    border-radius: 16px;
+    margin-left: 0;
+    margin-right: auto;
+   transform: translateX(10%);
+  }
+  
+  .content-table thead tr {
+    background-color: var(--blueGreen);
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .content-table th,
+  .content-table td {
+    padding: 12px 15px;
+  }
+  
+  .content-table tbody tr {
+    border-bottom: 1px solid var(--grey);
+  }
+  
+  .content-table tbody tr:nth-of-type(even) {
+    background-color:var(--green);
+  }
+  
+
+  .content-table tbody tr.active-row {
+    font-weight: bold;
+    color: var(--grey);
+  }
+  
+
+
+/*Tea Recipes*/
+
+.recipe{
+    width: 100%;
+    height: auto;
+    
+}
+
+/* Introduction Images*/
+
+
+
+
+
+
+
+
+ /*Fotter area*/
+.footer{
+    
+    width:100%;
+    min-height:170px;
+    padding: 30px 0px;
+    
+    color: var(--white);
+    margin: 0;
+    background-image: url(./img/Footer-image.jpg.png);
+    background-position: bottom;
+   
+    background-size: cover;
+    
+    text-align: center;
+
+
+}
+.back-top-btn{
+  
+    position: absolute;
+    filter: brightness(10);
+    right: 0%;
+   
+    cursor: pointer;
+    
+}
+
+/*Animations Global*/
+img{
+    transition: transform 0.3s ease;
+
+}
+img:hover{
+    transform: scale(1.1);
+}
+
+
+/*Respnosive NavBar*/
+@media only screen and (max-width: 850px){
+    .menu_btn{
+        display: block;
+    }
+    .navbar{
+        padding: 0;
+        
+
+    }
+
+   
+    .navigation-links .Logo{
+        display: none;
+        padding-bottom: 0%;
+        padding-top: 0%;
+    }
+    .navigation-links{
+        
+        color: var(--green);
+        font-size: 3vmax;
+        padding: 0 1px;
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+        background: rgba(31, 36, 33, 0.61);
+
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        
+    }
+    .mobile-menu{
+        
+        margin-top: 0px;
+        margin-bottom: 10px;
+        border-bottom-right-radius: 30%;
+
+       
+
+    }
+    .navigation-links li{
+        margin:20px auto;
+        color: var(--green);
+        
+    }
+    .navigation-links li a{
+        margin:30px auto;
+        color: var(--green);
+        
+    }
+   
+    
+}
+    

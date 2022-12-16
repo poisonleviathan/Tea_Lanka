@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Train Ticket</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="train.css">    
+</head>
+<body>
+    <header>
+		<h1><a href="#"><img class="logo" src="./Tea_Lanka_1.png" alt="Tea Lanka Logo" ></a></h1> 
+	
+	</header>
+	
+	<section class="box">  
+		<video src="./videos/Epic FPV Cinematic Train ride in SRI LANKA.mp4" autoplay muted loop></video>
+        <div class="card">
+            <section class="left">
+                <!-- Ticket Selection --> 
+                <h1 class="passHead">Local Pass</h1>
+                <p>Adult &nbsp;&nbsp;&nbsp;&nbsp;Rs.2500 <input type="number" id="quantity" name="quantity" min="0" >
+                </p>
+                <br>
+                <p>Child&nbsp;&nbsp;&nbsp;&nbsp;Rs.1000 <input type="number" id="quantity" name="quantity" min="0"> </p>
+                
+                <p id="childAge">(Below age 15)</p>
+                <br>
+
+
+                <!-- Radio Buttons For Time Period--> 
+                <form >
+                  <div class="ticket-radio">
+                  <label class="radio-label">
+                  <input class="radio-input" type="radio" name="optradio" value="3 Hours" checked> 3 Hours </label>
+                  <label class="radio-label">
+                  <input class="radio-input" type="radio" value="Half Day" name="optradio"> Half Day
+                  </label>
+                  <label class="radio-label">
+                  <input class="radio-input" type="radio" value="Full Day" name="optradio"> Full Day
+                  </label>
+                  <label class="radio-label">
+                      <input class="radio-input" type="radio" value="Two Days" name="optradio"> Two Days
+                    </label>
+                  </div>
+                </form>
+
+
+
+                  <br>
+                  <p>Colombo To Kandy Train Ticket  <label>
+                    <input type="checkbox" name="TicketPass">
+                    </label></p>
+                  <p>Nuwara Eliya to Kandy Train Ticket <label>
+                    <input type="checkbox" name="TicketPass">
+                    </label></p>
+               
+                 
+                  <br>
+                  <h2>Optional Charges</h2>
+                  <br>
+                  <p>Annual Pass &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Rs.5000 &nbsp;&nbsp;
+                    <label>
+                    <input type="checkbox" name="AnnualPass">
+                    </label>
+                  </p>
+                  <p>Food Pass &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Rs.500 &nbsp;&nbsp; 
+                    <label>
+                        <input type="checkbox" name="FoodPass">
+                        </label>
+                     </p>
+                  <br>
+                  <br>
+                  <p>Adult 3 hours + Child 3 hours = NO EXTRA CHARGE</p>
+                  <p>Adult half day + Child half day = Rs.1000</p>
+                  <p>Adult full day + Child full day = Rs.500</p>
+            </section>
+            
+
+            <section class="right">
+                   <!-- Ticket Selection --> 
+                <h1 class="passHead">Foreigner Pass</h1>
+                <p>Adult &nbsp;&nbsp;&nbsp;&nbsp;Rs.3000&nbsp;&nbsp;<input type="number" id="quantity" name="quantity" min="0"></p>
+                <br>
+                <p>Child&nbsp;&nbsp;&nbsp;&nbsp;Rs.2500  &nbsp;&nbsp<input type="number" id="quantity" name="quantity" min="0"> </p>
+                <p id="childAge">(Below age 15)</p>
+                <br>
+                <!-- Radio Buttons For Time Period--> 
+
+                <form>
+                  <div class="ticket-radio">
+                  <label class="radio-tic">
+                    <input type="radio" name="optradio" value="3 Hours" checked> 3 Hours
+                  </label>
+                  <label class="radio-tic">
+                    <input type="radio" value="Half Day" name="optradio"> Half Day
+                  </label>
+                  <label class="radio-tic">
+                    <input type="radio" value="Full Day" name="optradio"> Full Day
+                  </label>
+                  <label class="radio-tic">
+                      <input type="radio" value="Two Days" name="optradio"> Two Days
+                    </label>
+                  </div>
+                </form>
+
+
+
+                  <br>
+
+
+                  <p>Colombo To Kandy Train Ticket  <label>
+                    <input type="checkbox" name="TicketPass">
+                    </label></p>
+                  <p>Nuwara Eliya to Kandy Train Ticket <label>
+                    <input type="checkbox" name="TicketPass">
+                    </label></p>
+                  <br>
+                  <h2>Optional Charges</h2>
+                  <br>
+                  
+                  <p>Annual Pass &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Rs.5000 &nbsp;&nbsp;
+                    <label>
+                    <input type="checkbox" name="AnnualPass">
+                    </label>
+                  </p>
+                  <p>Food Pass &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Rs.500 &nbsp;&nbsp; 
+                    <label>
+                        <input type="checkbox" name="FoodPass">
+                        </label>
+                     </p>
+                  <br>
+                  <br>
+                  <p>Adult full day + Child full day = Rs.1000</p>
+                  <p>Adult 3 hours + Child 3 hours = Rs.1000</p>
+                  <p>Adult half day + Child half day = Rs.500</p>
+            </section>
+
+        </div>
+	 
+	</section>
+
+    <div class="box1">  
+      <video src="./videos/Epic FPV Cinematic Train ride in SRI LANKA.mp4" autoplay muted loop>
+
+      </video>
+          <div class="card">
+              
+              <section class="left">
+                <h1>
+                    Order Details
+                </h1>
+                <br>
+                <br>
+                <p> current order(s) </p>
+                <br>
+                <p>cost of the current order(s)</p>
+                <br>
+                <p> overall order </p>
+                <br>
+                <p>overall cost of the order</p>
+              
+              </section>
+              <div class="right">
+          
+                <button type="submit" name="Order">
+                    Place Order
+                </button>
+  
+                <br>
+                <br>
+                <button type="reset" name="clearCart">
+                    Clear Cart
+                </button>
+          
+          </div>
+          </div>
+      
+          
+        
+    </div>
+	 
+	
+
+<script src="./scripts/train.js"></script>
+
+    
+
+    
+</body>
+</html>
