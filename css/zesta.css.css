@@ -1,0 +1,269 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+	list-style: none;
+	scroll-behavior: smooth;
+}
+
+:root{
+	--bg-color: #ffffff;
+	--text-color: #121212;
+	--main-font: 2.2rem;
+	--p-font: 1.1rem;
+}
+body{
+	
+	color: var(--text-color);
+}
+body ,html{
+	overflow-x: hidden;
+}
+header{
+	background-image: url("../imgz/background.jpg");
+	
+	width: 100%;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	position: fixed;
+
+	box-shadow: 0px 2px 18px 0 rgb(129 162 182 / 20%);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 25px 8%;
+	transition: .3s;
+}
+.under-line{
+    width: 150px;
+    height: 4px;
+    background-color:black;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.video{
+	display: flex;
+	width: 100%;
+	padding: 10px;
+	
+}
+@media screen and (max-width:631px) {
+	h1{
+		margin-top: 15px;
+	}
+	
+}
+.logo{
+	
+	position: relative;
+   
+    
+  
+    
+  
+
+}
+#menu-icon{
+	font-size: 38px;
+	color: #fff;
+	z-index: 10001;
+	display: none;
+}
+.navbar{
+	display: flex;
+	align-items:center ;
+}
+.navbar a{
+	font-size: var(--p-font);
+	color: #fff;
+	font-weight: 600;
+	padding: 10px 15px;
+	margin: 0 10px;
+	transition: all .24s ease;
+}
+.navbar a:hover{
+	background: rgb(0, 83, 0);
+	color: #fff;
+}
+.icons{
+	display: inline-block;
+}
+.icons i{
+	color: #fff;
+	font-size: 24px;
+	margin-left: 15px;
+}
+.icons i:hover{
+	opacity: 0.7;
+}
+
+section{
+	padding: 8%;
+}
+.container{
+	
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	
+	align-items: center;
+	justify-content: space-evenly;
+	text-align: center;
+	cursor: pointer;
+	
+}
+.box{
+	flex: 0 0 33.3333%;
+	padding-top: 0;
+
+	background: transparent;
+	box-shadow: 5px 30px 56.1276px rgb(55 55 55 / 12%);
+	border-radius: 10px;
+	position: relative;
+	transition: all .20s ease-in-out;
+}
+.box img{
+	width: 300px;
+	height: auto;
+}
+.box h4{
+	font-size: 15px;
+	letter-spacing: 1px;
+	margin-bottom: 8px;
+}
+.box h5{
+	font-size: 14px;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+
+.box:hover{
+	transform: translateY(-20px);
+}
+
+.about{
+	background: #f7f6f6;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.about-content{
+	text-align: center;
+}
+.about-content h1{
+	font-size: var(--main-font);
+	margin-bottom: 30px;
+}
+.about-content p{
+	max-width: 800px;
+	font-size: var(--p-font);
+	font-weight: 600;
+	color: var(--text-color);
+	line-height: 30px;
+}
+.box a:active{
+	color: #121212;
+
+}
+ .box a:visited{
+	color: #121212;
+	
+}
+.about-item{
+	text-align: center;
+	font-size: var(--main-font);
+	
+}
+
+.about-item h4 {
+	font-size: 1.5rem;
+
+	text-align: center;
+
+	
+}
+
+.contact{
+	padding: 80px 17%;
+	background: var(--text-color);
+}
+.contact h1{
+	color: #fff;
+	text-align: center;
+	padding-bottom: 30px;
+}
+.main-contact{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+	gap: 2rem;
+	margin-bottom: 3rem;
+}
+.contact-content li{
+	margin-bottom: 15px;
+}
+.contact-content li a{
+	display: block;
+	color: var(--bg-color);
+	font-size: var(--p-font);
+	font-weight: 600;
+	transition: all .40s ease;
+}
+.contact-content li a:hover{
+	transform: translateX(-10px);
+}
+.action form{
+	text-align: center;
+}
+.action form input[type="email"]{
+	width: 460px;
+	max-width: 100%;
+	padding: 12px 15px;
+	background: #515151;
+	color: var(--bg-color);
+	border: none;
+	outline: none;
+	margin: 0px 10px 20px 0px;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.action form input[type="submit"]{
+	padding: 10px 35px;
+	background: var(--bg-color);
+	color: var(--text-color);
+	border: none;
+	outline: none;
+	margin: 0px 10px 20px 0px;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+}
+.last{
+	text-align: center;
+	padding: 17px;
+	background: #757575;
+}
+.last p{
+	color: var(--text-color);
+	font-size: 15px;
+	font-weight: 600;
+	letter-spacing: 2px;
+}
+
+@media (max-width: 800px){
+	#menu-icon{
+		display: block;
+	}
+	header{
+		padding: 15px 8%;
+	}
+	.navbar li a{
+		font-size: 3vmin;
+		
+		
+	}
+}
